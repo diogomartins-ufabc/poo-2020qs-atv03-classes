@@ -60,6 +60,22 @@ public class Rectangle {
         return false;
     }
 
+    public double getXx() {
+        return xx;
+    }
+
+    public double getYy() {
+        return yy;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
     @Override
     public String toString() {
         return "Rectangle{"

@@ -44,7 +44,8 @@ public class Rational {
      */
     public Rational plus(Rational b) {
         // TODO: Completar
-        return new Rational(0,1);
+        lmm(1, 1); // TODO: remove this line
+        return new Rational(0, 1);
     }
 
     /**
@@ -54,7 +55,7 @@ public class Rational {
      */
     public Rational minus(Rational b) {
         // TODO: Completar
-        return new Rational(0,1);
+        return new Rational(0, 1);
     }
 
     /**
@@ -64,7 +65,7 @@ public class Rational {
      */
     public Rational times(Rational b) {
         // TODO: Completar
-        return new Rational(0,1);
+        return new Rational(0, 1);
     }
 
     /**
@@ -74,7 +75,7 @@ public class Rational {
      */
     public Rational divides(Rational b) {
         // TODO: Completar
-        return new Rational(0,1);
+        return new Rational(0, 1);
     }
 
     /**
@@ -116,6 +117,14 @@ public class Rational {
         return denominator;
     }
 
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
+    }
+
     /**
      * Shows the real number as fraction, the signal normalized
      * so that it appears only in the numerator, if any.
@@ -128,4 +137,5 @@ public class Rational {
 
         return signal + Math.abs(this.numerator) + "/" + Math.abs(this.denominator);
     }
+
 }
